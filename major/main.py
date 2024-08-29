@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from flask import Flask, send_file, request
 from flask_cors import CORS, cross_origin
 import tensorflow as tf
-from tensorflow import keras as tfk
-from tensorflow.keras import backend as K
 import numpy as np
-from imageio import imread, imsave
+from imageio.v2 import imread, imsave
+from PIL import Image
 import os
 import cv2
-from PIL import Image
-
 
 app = Flask(__name__)
 CORS(app)
-
 img_size = 256
 
 class DMT(object):
@@ -28,15 +25,19 @@ class DMT(object):
         return (img + 1) / 2
 
     def load_image(self, path):
-        img = cv2.resize(imread(path), (img_size, img_size))
-        img_ = np.expand_dims(self.preprocess(img), 0)
-        return img / 255., img_
+        img = Image.open(path)
+        img = img.convert('RGB')  # Ensure image is in RGB format
+        img = img.resize((img_size, img_size))
+        img_np = np.array(img)
+        img_np = img_np[:, :, :3]  # Ensure image has 3 channels
+        img_ = np.expand_dims(self.preprocess(img_np), 0)
+        return img_np / 255., img_
 
     def load_model(self):
-        self.sess = tf.keras.backend.get_session()
-        with self.sess.as_default():
-            with tf.gfile.GFile(self.pb, 'rb') as f:
-                graph_def = tf.GraphDef()
+        self.sess = tf.compat.v1.Session()
+        with self.sess.graph.as_default():
+            with tf.compat.v1.gfile.GFile(self.pb, 'rb') as f:
+                graph_def = tf.compat.v1.GraphDef()
                 graph_def.ParseFromString(f.read())
                 tf.import_graph_def(graph_def, name='')
             self.X = self.sess.graph.get_tensor_by_name('X:0')
@@ -46,7 +47,6 @@ class DMT(object):
             self.X_style = self.sess.graph.get_tensor_by_name('style_encoder/style_code:0')
             self.Xs = self.sess.graph.get_tensor_by_name('decoder_1/g:0')
             self.Xf = self.sess.graph.get_tensor_by_name('decoder_2/g:0')
-
 
     def pairwise(self, A, B):
         A_img, A_img_ = self.load_image(A)
@@ -65,7 +65,6 @@ model.load_model()
 @app.route('/pairwise', methods=['POST'])
 @cross_origin()
 def pairwiseApi():
-    print(request.files)
     no_makeup_file = request.files['no_makeup']
     makeup_file = request.files['makeup']
 
