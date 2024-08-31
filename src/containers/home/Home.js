@@ -4,7 +4,6 @@ import { Box, Button, Container, Divider, Typography } from "@mui/material";
 import getStarted1 from "../../assets/getstarted1.png";
 import getStarted2 from "../../assets/getstarted2.png";
 import feature1 from "../../assets/feature1.png";
-import feature2 from "../../assets/feature2.png";
 import feature3 from "../../assets/feature3.png";
 import thanksIcon from "../../assets/thanks.svg";
 import { Link } from "react-router-dom";
@@ -82,48 +81,14 @@ const Home = () => {
 
           <Divider />
 
-          <div className="feature columnReverse">
-            <div className="featureContent">
-              <h1>NEW! FACE TRY-ON</h1>
-              <p>
-                Match yourself with the perfect shades and coverage of
-                foundations, concealers, powders, blushes, bronzers, and setting
-                sprays. You can even compare the finishes – from matte to satin,
-                to radiant all with amazing accuracy!
-              </p>
-              <div>
-                <Link
-                  to="face-tryon"
-                  style={{ textDecoration: "none", display: "flex" }}
-                >
-                  <Button>Try It On</Button>
-                </Link>
-              </div>
-            </div>
-            <div className="featureImg">
-              <img src={feature2} alt="feature2" />
-            </div>
-          </div>
-
+         
           <Divider />
 
           <div className="feature">
             <div className="featureImg">
               <img src={feature3} alt="feature3" />
             </div>
-            <div className="featureContent">
-              <h1>ACNE DETECTION</h1>
-              <p>
-                In the mood for epic artistry or a work-from-home glow? Pick
-                your favorite looks from our looks catalog, try it on, and shop!
-              </p>
-              <Link
-                to="acne-detection"
-                style={{ textDecoration: "none", display: "flex" }}
-              >
-                <Button>Try It On</Button>
-              </Link>
-            </div>
+           
           </div>
 
           <div className="thanks">
