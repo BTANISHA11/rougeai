@@ -23,7 +23,6 @@ import sys
 
 cli = sys.modules['flask.cli']
 cli.show_server_banner = lambda *x: None
-from flask import Flask
 
 app = Flask(__name__)
 CORS(app)
@@ -497,4 +496,3 @@ def color():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=7001)
-

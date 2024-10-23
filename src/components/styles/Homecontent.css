@@ -1,0 +1,110 @@
+/* HomeContent Container */
+.container {
+    font-family: 'Lato', sans-serif;
+    color: #391306; /* Puce */
+    padding: 2rem 0;
+}
+
+/* Title Styling */
+h1.display-4 {
+    font-family: 'Playfair Display', serif; /* Keep classy font */
+    font-size: 6rem; /* Increased font size */
+    font-weight: bold;
+    color: #E80071; /* Rose Red */
+    text-align: left;
+    margin-left: 2rem;
+}
+
+/* Subtitle Styling */
+p.lead {
+    font-size: 2rem; /* Increased font size */
+    color: #f1ced4; /* Rose Quartz */
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Get Started Button */
+/* Get Started Button */
+/* Get Started Button */
+/* Get Started Button */
+.btn-success {
+    background-color: #E80071; /* Rose Red */
+    border: none;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 25px;
+    position: relative; /* Position relative for the pseudo-element */
+    overflow: hidden; /* Hide overflow to create the gloss effect */
+    transition: background-color 0.3s ease; /* Remove scaling on hover */
+}
+
+.btn-success::before {
+    content: '';
+    position: absolute;
+    top: -100%; /* Start above the button */
+    left: -100%; /* Start from the left */
+    width: 200%; /* Ensure it covers the button */
+    height: 200%; /* Ensure it covers the button */
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.6), 
+        rgba(255, 255, 255, 0.4), 
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.4), 
+        rgba(255, 255, 255, 0.6)
+    ); /* Diagonal gradient with multiple shades */
+    transition: top 0.8s ease-in-out, left 0.8s ease-in-out; /* Smooth transition for gloss effect */
+}
+
+.btn-success:hover::before {
+    top: 100%; /* Move gloss effect down on hover */
+    left: 100%; /* Move gloss effect to the right on hover */
+}
+
+.btn-success:hover {
+    background-color: #391306; /* Puce */
+    color: #f9ccd3; /* Light Rose Quartz */
+}
+
+
+
+/* Align Content and Image in One Line */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+/* Center Image and Content Horizontally */
+.text-center {
+    text-align: left;
+}
+
+.text-center + section {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; /* Start from the top */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start; /* Align content to the left */
+    z-index: 10; /* Ensures the overlay is above the video */
+    padding: 2rem; /* Adds padding for spacing */
+    /* Remove the background color to let the video show through */
+    /* background: rgba(0, 0, 0, 0.5); */ /* Commented out */
+}
+
+.text-left {
+    text-align: left; /* Ensure text is left aligned */
+}

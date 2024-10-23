@@ -1,0 +1,78 @@
+.image-editor {
+  text-align: center;
+  padding: 20px;
+}
+
+.dropzone {
+  border: 7px dotted #fccbda; /* Thick dotted border with Rose Red color */
+  background-color: #fbedef; /* Light Rose Quartz background */
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropzone:hover {
+  background-color: #fbedef; /* Lighter Rose Quartz on hover */
+  box-shadow: 0 0 20px 5px rgba(164, 131, 141, 0.7), 
+              0 0 30px 10px rgba(145, 115, 107, 0.5); /* Radiant glow effect */
+}
+
+.dropzone-text {
+  color: #391306; /* Puce text color */
+  font-size: 1.2rem;
+}
+
+.uploadimg {
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uploaded-image {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.analyze-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #E80071; /* Rose Red */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.analyze-button:hover {
+  background-color: #8b1537; /* Darker shade of Rose Red */
+}
+
+.comparison-section {
+  margin-top: 30px;
+}
+
+.comparison-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.comparison-image {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+h4 {
+  color: #391306; /* Puce */
+  margin-bottom: 10px;
+}

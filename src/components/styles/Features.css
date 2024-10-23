@@ -1,0 +1,106 @@
+/* Container Styling */
+.containerFeatures {
+    font-family: 'Lato', sans-serif;
+    color: #391306; /* Puce */
+    padding: 50px;
+    background-color: #f9ccd3; /* Rose Quartz */
+    border-radius: 10px;
+}
+
+/* Title Styling */
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #E80071; /* Rose Red */
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Tagline Styling */
+.tagline {
+    font-family: 'Lato', sans-serif;
+    color: #391306; /* Puce */
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+/* Feature Card Styling */
+.feature-card {
+    background-color: #f6eff0; /* Light Rose Quartz */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature Image */
+.feature-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #E80071; /* Rose Red */
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Card Title */
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #391306; /* Puce */
+    margin-bottom: 15px;
+}
+
+/* Card Text */
+.card-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #391306; /* Puce */
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.feature-btn {
+    background-color: #E80071; /* Rose Red */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.feature-btn:hover {
+    background-color: #391306; /* Puce */
+    color: #f9ccd3; /* Light Rose Quartz */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+}

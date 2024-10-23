@@ -1,0 +1,59 @@
+.makeup-list-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.makeup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.makeup-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.makeup-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.makeup-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.makeup-info {
+    padding: 10px;
+}
+
+.makeup-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.makeup-description {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.makeup-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.makeup-info p {
+    margin-top: 10px;
+}

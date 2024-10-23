@@ -1,0 +1,134 @@
+/* Container Styling */
+.containerFeatures {
+    font-family: 'Lato', sans-serif;
+    color: #391306; /* Puce */
+    background-image: url('../../img/bg.png'); /* Add your SVG background if needed */
+    background-repeat: no-repeat;
+    background-position: center center; /* Adjust position as needed */
+    background-size: cover; /* Adjust size if you want the image to cover the entire container */
+    padding: 50px 20px; /* Adjust padding to your preference */
+   /* Center-align the content */
+}
+
+/* Title Image Styling */
+.featuresList img {
+    width:80%; /* Adjust width for smaller size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; 
+    margin: auto;/* Space between the image and the heading */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.headerImage {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #aa1945; /* Rose Red */
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    color: #391306; /* Puce */
+    font-style: italic;
+}
+/* Title Styling */
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #aa1945; /* Rose Red */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Tagline Styling */
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #391306; /* Puce */
+}
+
+.featuresList {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.featureItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reverseLayout .featureContent {
+    flex-direction: row-reverse;
+}
+
+.featureContent {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.featureImageWrapper {
+    flex: 1;
+}
+
+.featureImage {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.featureText {
+    flex: 1;
+}
+
+.featureTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    color: #391306; /* Puce */
+    margin-bottom: 1rem;
+}
+
+.featureDescription {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    color: #391306; /* Puce */
+    margin-bottom: 1.5rem;
+}
+
+.featureBtn {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #aa1945; /* Rose Red */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.featureBtn:hover {
+    background-color: #8c1439;
+}
+
+.featureDivider {
+    margin-top: 2rem;
+    border: none;
+    border-top: 1px solid #f1ced4;
+}
+

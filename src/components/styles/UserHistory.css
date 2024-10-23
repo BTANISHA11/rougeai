@@ -1,0 +1,48 @@
+.user-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9ccd3; /* Rose Quartz */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.history-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #E80071; /* Rose Red */
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #391306; /* Puce */
+}
+
+.history-table th {
+    background-color: #f1ced4; /* Lighter Rose Quartz */
+    font-weight: 600;
+}
+
+.history-table tr:hover {
+    background-color: #fbe2e6; /* Very light pink for hover effect */
+}
+
+.history-table td {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.history-table tr:last-child td {
+    border-bottom: none;
+}

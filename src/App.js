@@ -25,7 +25,7 @@ const AppWrapper = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Rouge AI</title>
+        <title>BeautyBuzz</title>
       </Helmet>
       <Router>
         <Navbar />

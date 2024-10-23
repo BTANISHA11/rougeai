@@ -1,0 +1,75 @@
+
+
+.node_one, .node_two, .node_three, .node_four {
+    position: absolute;
+    z-index: 0;
+    width: 350px;  /* Adjust the size as needed */
+    height: 350px; /* Maintain aspect ratio if the image is square */
+    opacity: 0.1; /* Adjust opacity for subtlety */
+}
+
+.node_one {
+    top: -50px;
+    right: -50px;
+}
+
+.node_two {
+    top: 70vh;
+    left: -50px;
+}
+
+.node_three { /* Fixed Typo */
+    top: 160vh;
+    right: -50px;
+}
+
+.node_four {
+    top: 250vh;
+    left: -50px;
+}
+
+/* Adjust positions on larger screens */
+@media (min-width: 768px) { 
+    .node_two {
+        top: 60vh;
+    }
+
+    .node_three {
+        top: 140vh;
+    }
+
+    .node_four {
+        top: 220vh;
+    }
+}
+
+.healthcare-cards {
+    width: 100%;
+    max-width: 800px; /* Max width of the container holding the cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; /* Ensure the cards appear above the background nodes */
+}
+
+.healthcare-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    z-index: 2; /* Ensure cards are above the image nodes */
+    position: relative;
+}
+
+.headerImage {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1; /* Ensure the header image appears above the background nodes */
+}
