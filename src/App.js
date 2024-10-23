@@ -1,9 +1,13 @@
+import React from "react";
 import "./App.css";
 import { useRoutes, BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./containers/home/Home";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import ColorTryOn from "./containers/colorTryOn/ColorTryOn";
+
+import { Route } from "react-router-dom";
+
 
 function App() {
   let routes = useRoutes([
@@ -16,6 +20,8 @@ function App() {
       path: "/color-tryon",
       element: <ColorTryOn />,
     },
+    
+    
     
   ]);
   return routes;
