@@ -1,61 +1,51 @@
+/* Navbar Container */
 .navbar {
-  position: relative !important;
-  background-color: var(--color-primary) !important;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding: 1rem;
 }
 
-.logoContainer {
-  display: flex;
+/* Brand Name */
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
 }
 
-.menuButton {
-  font-family: var(--font-family) !important;
-  font-size: 15px !important;
-  padding: 0;
+/* Centered Navbar Links */
+.navbar-nav {
+  margin: 20 auto;
 }
 
-.menuButton:hover {
-  text-decoration: underline !important;
-  text-decoration-color: var(--color-secondary) !important;
-  text-decoration-thickness: 2px !important;
+.nav-link {
+  font-family: 'Lato', sans-serif;
+  color: #391306;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
 }
 
-.toolbar {
-  display: flex;
-  justify-content: space-between;
+.nav-link:hover {
+  color: #E80071;
 }
 
-.drawerContainer {
-  padding: 20px 30px;
-  background: var(--color-primary) !important;
-  height: 100%;
+/* Login Button */
+.btn-login {
+  background-color: #E80071;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
 }
 
-.tryNowButton {
-  font-family: var(--font-family) !important;
-  background: var(--color-secondary) !important;
-  width: 15%;
-  color: white !important;
-  font-weight: 700 !important;
-  font-size: 12px !important;
+.btn-login:hover {
+  background-color: #391306;
+  color: #f9ccd3;
 }
 
-.tryNowButton:hover {
-  background: var(--color-secondary);
+/* Mobile Menu Button */
+.navbar-toggler {
+  border: none;
 }
 
-@media screen and (max-width: 950px) {
-  .navbar {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .logoContainer {
-    width: 90%;
-  }
-
-  .tryNowButton {
-    width: 35%;
-  }
+.navbar-toggler-icon {
+  color: #391306;
 }
