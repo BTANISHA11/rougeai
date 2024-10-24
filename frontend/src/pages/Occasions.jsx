@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion'; // Import motion
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import './styles/Occasions.css';
 import CameraTry from '../components/cameraTry';
 import MakeupList from '../components/makeupList'; // Import the MakeupList component
@@ -15,6 +15,41 @@ const EventsList = [
         title: "Cocktail Party",
         description: "Want to go to a cocktail party and look all cocky? Try makeups from here.",
         link: '/acne-detection',
+    },
+    {
+        title: "Birthday Party",
+        description: "Celebrate your special day with a stunning look that makes you shine.",
+        link: '/birthday-makeup',
+    },
+    {
+        title: "Prom Night",
+        description: "Make a lasting impression on your prom night with the perfect makeup.",
+        link: '/prom-makeup',
+    },
+    {
+        title: "Bridal Shower",
+        description: "Get ready for the bridal shower with elegant and charming makeup styles.",
+        link: '/bridal-shower-makeup',
+    },
+    {
+        title: "Family Reunion",
+        description: "Look fabulous for your family gathering and capture beautiful memories.",
+        link: '/family-reunion-makeup',
+    },
+    {
+        title: "Corporate Event",
+        description: "Professional makeup to help you stand out at your next business event.",
+        link: '/corporate-makeup',
+    },
+    {
+        title: "New Year's Eve Party",
+        description: "Ring in the new year with glamorous makeup that dazzles.",
+        link: '/new-year-makeup',
+    },
+    {
+        title: "Themed Costume Party",
+        description: "Express yourself with creative makeup for themed parties.",
+        link: '/costume-party-makeup',
     },
     // Add more events as needed
 ];
@@ -54,7 +89,7 @@ function Occasions() {
 
     return (
         <>
-            <Navbar />
+           
             <div className="occasions-container">
                 <h2 className="text-center">Special Occasions</h2>
                 <p className="text-center tagline">Choose makeup for special events</p>

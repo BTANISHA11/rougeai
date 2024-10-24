@@ -1,0 +1,46 @@
+/* Navbar.css */
+
+.custom-navbar {
+    background-color: #343a40; /* Dark background for the navbar */
+}
+
+.navbar-brand {
+    margin-right: 20px; /* Space between logo and links/buttons */
+}
+
+.navbar-links {
+    display: flex; /* Aligns links and buttons in a row */
+    align-items: center; /* Vertically centers the items */
+}
+
+.nav-link {
+    color: white; /* White text for the links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+.btn-login, .btn-register {
+    padding: 6px 12px; /* Consistent padding for buttons */
+    border: 1px solid white; /* White border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-weight: bold; /* Bold text for buttons */
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        align-items: center; /* Center align links */
+    }
+
+    .nav-link {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+}

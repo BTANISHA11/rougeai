@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import motion
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import featureImage1 from '../img/img (2).png';
 import featureImage2 from '../img/product.jpeg';
 import featureImage3 from '../img/add.webp';
@@ -13,7 +13,7 @@ const featuresList = [
         title: "LIMITLESS SHADES AND FINISHES",
         description: "Experiment with new finishes and play with colors to find the right match for you in just a few clicks.",
         image: featureImage1,
-        link: '/shades-try-on'
+        link: '/color-tryon'
     },
     {
         title: "SELECT ACCORDING TO OCCASSION",
@@ -44,7 +44,7 @@ const FeaturesPage = () => {
 
     return (
         <>
-            <Navbar />
+           
             <div className={`${styles.containerFeatures} my-5 container`}>
                 <div className={`${styles.header} text-center mb-4`}>
                     <img src={img7} alt="Header Graphic" className={`${styles.headerImage} text-center mb-4`} />

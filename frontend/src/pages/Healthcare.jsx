@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import motion
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import svg from '../img/gifs (1).svg';
 import img1 from '../img/bg1.png'; // Ensure this path is correct
 import './styles/Healthcare.css';
@@ -21,7 +21,7 @@ const HealthcarePage = () => {
 
     return (
         <>
-            <Navbar />
+            
             <div className="healthcare-container">
                 <div className="node_one"><img src={img1} alt="Decoration 1" /></div>
                 <div className="node_two"><img src={img1} alt="Decoration 2" /></div>
