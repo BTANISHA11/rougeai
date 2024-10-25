@@ -10,6 +10,8 @@ import FeaturesPage from "./pages/FeaturesPage";
 import HealthcarePage from "./pages/Healthcare";
 import PersonalizedRecommendationsPage from "./pages/PersonalizedRecommendationsPage";
 import AIPoweredAnalysisPage from "./pages/AIPoweredAnalysisPage";
+import LoginPage from "./pages/Login";
+import RegisterPage from "./pages/Register";
 
 // import { Route } from "react-router-dom";
 
@@ -45,6 +47,14 @@ function App() {
     {
       path:"/ai-powered-analysis",
       element:<AIPoweredAnalysisPage/>
+    },
+    {
+      path: "/login",
+      element: <LoginPage />,
+    }, 
+    {
+      path: "/register",
+      element: <RegisterPage />,
     }
     
   ]);
