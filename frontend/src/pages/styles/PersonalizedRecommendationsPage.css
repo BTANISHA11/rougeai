@@ -1,78 +1,96 @@
-/* PersonalizedRecommendationsPage.css */
-
-/* Container Styling */
 .container {
-    max-width: 1200px; /* Limit the maximum width */
+    max-width: 1200px; /* Set a max width for the container */
     margin: 0 auto; /* Center the container */
-    padding: 0 15px; /* Add some horizontal padding */
+    padding: 20px; /* Add padding around the container */
 }
 
-/* Header Styling */
 .header {
-    margin-bottom: 40px; /* Space below header */
+    margin-bottom: 40px; /* Space between header and content */
 }
 
 .heading {
-    font-family: 'Playfair Display', serif; /* Elegant font for heading */
-    font-size: 2.5rem;
-    color: #aa1945; /* Rose Red */
+    font-size: 2.5rem; /* Main heading size */
+    color: #333; /* Dark color for text */
+    margin: 0; /* Remove default margin */
 }
 
 .tagline {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.25rem;
-    color: #555; /* Darker grey for tagline */
-    font-style: italic;
+    font-size: 1.25rem; /* Tagline size */
+    color: #666; /* Lighter color for tagline */
 }
 
-/* Recommendations List */
+.selectionContainer {
+    margin-bottom: 20px; /* Space below the selection container */
+}
+
+.label {
+    font-size: 1.125rem; /* Font size for the label */
+    margin-right: 10px; /* Space between label and select */
+}
+
+.select {
+    padding: 10px; /* Padding inside the select box */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for select options */
+    width: 200px; /* Fixed width for the dropdown */
+}
+
+.content {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space between items */
+}
+
 .recommendationsList {
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between items */
+    display: grid; /* Use grid layout for recommendation items */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
 }
 
 .recommendationItem {
-    background-color: #fff; /* White background for each item */
-    padding: 20px; /* Add some padding */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background for items */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside recommendation items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.recommendationItem:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .recommendationImage {
-    width: 100%; /* Full-width image */
-    height: 150px; /* Fixed height for images */
-    object-fit: cover; /* Ensure image covers the entire area */
-    border-radius: 10px 10px 0 0; /* Rounded corners for image */
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
 }
 
 .recommendationTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: #391306; /* Puce */
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Title size */
+    margin: 10px 0; /* Margin above and below title */
+    color: #333; /* Dark text color */
 }
 
 .recommendationDescription {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    color: #555; /* Darker grey for description */
-    margin-bottom: 20px;
+    font-size: 1rem; /* Description size */
+    color: #555; /* Medium gray color for description */
+    margin-bottom: 15px; /* Space below description */
 }
 
 .recommendationBtn {
-    background-color: #aa1945; /* Rose Red for button */
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Make it an inline-block element */
+    padding: 10px 15px; /* Padding for button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Font size for button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .recommendationBtn:hover {
-    background-color: #891e3d; /* Darker shade of Rose Red on hover */
-    transform: translateY(-2px);
+    background-color: #0056b3; /* Darker shade on hover */
 }
