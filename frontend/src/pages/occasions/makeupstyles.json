@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Soft Glam Palette",
+        "description": "Perfect for fair skin tones with soft, neutral shades.",
+        "priceRange": "$20 - $30",
+        "imageUrl": "/images/soft-glam-palette.jpg",
+        "skinTone": "Fair"
+    },
+    {
+        "name": "Medium Nude Lipstick",
+        "description": "A flattering nude shade for medium skin tones.",
+        "priceRange": "$15 - $25",
+        "imageUrl": "/images/medium-nude-lipstick.jpg",
+        "skinTone": "Medium"
+    },
+    {
+        "name": "Golden Glow Foundation",
+        "description": "Adds a radiant glow for olive skin tones.",
+        "priceRange": "$30 - $40",
+        "imageUrl": "/images/golden-glow-foundation.jpg",
+        "skinTone": "Olive"
+    },
+    {
+        "name": "Deep Red Blush",
+        "description": "A rich color that enhances dark skin tones.",
+        "priceRange": "$10 - $20",
+        "imageUrl": "/images/deep-red-blush.jpg",
+        "skinTone": "Dark"
+    }
+]

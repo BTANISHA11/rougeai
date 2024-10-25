@@ -12,6 +12,8 @@ import PersonalizedRecommendationsPage from "./pages/PersonalizedRecommendations
 import AIPoweredAnalysisPage from "./pages/AIPoweredAnalysisPage";
 import LoginPage from "./pages/Login";
 import RegisterPage from "./pages/Register";
+import MarriageParty from "./pages/occasions/marriageparty";
+
 
 // import { Route } from "react-router-dom";
 
@@ -55,6 +57,10 @@ function App() {
     {
       path: "/register",
       element: <RegisterPage />,
+    },
+    {
+      path: "/occasions/marriageparty",
+      element: <MarriageParty />,
     }
     
   ]);

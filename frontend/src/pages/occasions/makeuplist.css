@@ -1,0 +1,44 @@
+.makeup-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.makeup-card {
+    width: 200px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.makeup-card:hover {
+    transform: scale(1.05);
+}
+
+.makeup-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.makeup-card h4 {
+    font-size: 1.2em;
+    color: #ff69b4;
+    margin: 10px 0 5px;
+}
+
+.makeup-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.makeup-card .price {
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
