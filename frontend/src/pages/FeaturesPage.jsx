@@ -19,7 +19,7 @@ const featuresList = [
         title: "SELECT ACCORDING TO OCCASSION",
         description: "Select your perfect makeup kit based on the occassion and purchase from top sites like Amazon and MyGlamm",
         image: featureImage2,
-        link: '/acne-detection'
+        link: '/occasions'
     },
     {
         title: "PERSONALIZED RECOMMENDATIONS",

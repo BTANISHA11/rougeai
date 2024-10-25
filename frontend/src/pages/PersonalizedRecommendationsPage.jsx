@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import motion
-import Navbar from '../components/Navbar';
+
 // import recommendationsImage from '../img/personalized-recommendations.png'; // Example image for recommendations
 import styles from './styles/PersonalizedRecommendationsPage.css';
 
@@ -35,7 +35,7 @@ const PersonalizedRecommendationsPage = () => {
 
     return (
         <>
-            <Navbar />
+            
             <div className={`${styles.container} my-5 container`}>
                 <div className={`${styles.header} text-center mb-4`}>
                     <h2 className={styles.heading}>Personalized Recommendations</h2>

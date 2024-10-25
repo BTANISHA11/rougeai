@@ -8,6 +8,8 @@ import ColorTryOn from "./containers/colorTryOn/ColorTryOn";
 import Occasions from "./pages/Occasions";
 import FeaturesPage from "./pages/FeaturesPage";
 import HealthcarePage from "./pages/Healthcare";
+import PersonalizedRecommendationsPage from "./pages/PersonalizedRecommendationsPage";
+import AIPoweredAnalysisPage from "./pages/AIPoweredAnalysisPage";
 
 // import { Route } from "react-router-dom";
 
@@ -35,6 +37,14 @@ function App() {
     {
       path:"/healthcare",
       element:<HealthcarePage/>
+    },
+    {
+      path:"/personalized-recommendations",
+      element:<PersonalizedRecommendationsPage/>
+    },
+    {
+      path:"/ai-powered-analysis",
+      element:<AIPoweredAnalysisPage/>
     }
     
   ]);

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';  // Adjust the path based on your folder structure
 import './styles/Navbar.css';  // Ensure the CSS is imported
 
 const Navbar = () => {
@@ -7,22 +8,19 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-md navbar-dark custom-navbar">
             <div className="container-fluid d-flex align-items-center justify-content-between">
                 {/* Logo */}
-                <Link 
-                    className="navbar-brand logo-text" 
-                    to="/" 
-                    style={{
-                        fontFamily: '"Updock", cursive',
-                        fontWeight: 'bold',  // Bold logo text
-                        fontSize: '2rem',
-                        color: 'white',
-                        marginRight: '20px' // Space between logo and links/buttons
-                    }}
-                >
-                    Beauty Buzz
+                <Link to="/" className="navbar-brand logo-text">
+                    <img 
+                        src={logo} 
+                        alt="Beauty Buzz Logo" 
+                        style={{
+                            height: '50px', // Adjust height as needed
+                            marginRight: '20px'
+                        }} 
+                    />
                 </Link>
 
-                {/* Links and Buttons Container */}
-                <div className="navbar-links d-flex align-items-center">
+                {/* Links Container */}
+                <div className="navbar-links mx-auto d-flex justify-content-center">
                     <ul className="navbar-nav d-flex">
                         {['Home', 'Features', 'Healthcare', 'Occasions'].map((path, index) => (
                             <li className="nav-item" key={index}>
@@ -31,11 +29,11 @@ const Navbar = () => {
                                     to={path === 'Home' ? '/' : `/${path.toLowerCase()}`} 
                                     style={{
                                         fontFamily: '"Updock", cursive',
-                                        fontWeight: 'bold',  // Bold navigation text
-                                        fontSize: '2rem',
+                                        fontWeight: 'bold',
+                                        fontSize: '1.5rem',
                                         textDecoration: 'none',
                                         color: 'white',
-                                        margin: '0 15px' // Horizontal margin between links
+                                        margin: '0 20px'
                                     }}
                                 >
                                     {path}
@@ -43,6 +41,10 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
+                </div>
+
+                {/* Buttons Container */}
+                <div className="navbar-buttons d-flex">
                     <Link 
                         className="nav-link btn-login" 
                         to="/login" 
@@ -54,7 +56,7 @@ const Navbar = () => {
                             border: '1px solid white',
                             borderRadius: '5px',
                             fontSize: '1rem',
-                            margin: '0 10px', // Horizontal margin for buttons
+                            margin: '0 10px',
                             fontWeight: 'bold'
                         }}
                     >

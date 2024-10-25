@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import motion
-import Navbar from '../components/Navbar';
 // import aiImage from '../img/ai-powered-analysis.png'; // Example image for AI analysis
 import styles from './styles/AIPoweredAnalysisPage.css';
 
@@ -13,7 +12,6 @@ const AIPoweredAnalysisPage = () => {
 
     return (
         <>
-            <Navbar />
             <div className={`${styles.container} my-5 container`}>
                 <div className={`${styles.header} text-center mb-4`}>
                     <h2 className={styles.heading}>AI-Powered Analysis</h2>

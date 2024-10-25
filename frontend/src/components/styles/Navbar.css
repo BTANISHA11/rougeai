@@ -1,46 +1,30 @@
-/* Navbar.css */
-
 .custom-navbar {
     background-color: #343a40; /* Dark background for the navbar */
 }
 
-.navbar-brand {
-    margin-right: 20px; /* Space between logo and links/buttons */
+.navbar-links {
+    flex-grow: 1; /* Allow the links to grow and take the available space */
 }
 
-.navbar-links {
-    display: flex; /* Aligns links and buttons in a row */
-    align-items: center; /* Vertically centers the items */
+.navbar-nav {
+    display: flex; /* Use flexbox for the nav items */
+    justify-content: center; /* Center the nav items */
 }
 
 .nav-link {
-    color: white; /* White text for the links */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    transition: color 0.2s ease; /* Add transition for hover effect */
 }
 
 .nav-link:hover {
-    color: #ffc107; /* Change color on hover */
+    color: #ffcc00; /* Change color on hover */
 }
 
 .btn-login, .btn-register {
-    padding: 6px 12px; /* Consistent padding for buttons */
-    border: 1px solid white; /* White border for buttons */
-    border-radius: 5px; /* Rounded corners for buttons */
-    font-weight: bold; /* Bold text for buttons */
+    transition: background 0.2s ease, border-color 0.2s ease; /* Add transition for buttons */
 }
 
 .btn-login:hover, .btn-register:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .navbar-links {
-        flex-direction: column; /* Stack links vertically on smaller screens */
-        align-items: center; /* Center align links */
-    }
-
-    .nav-link {
-        font-size: 1.5rem; /* Smaller font size on mobile */
-    }
+    background: white; /* Change background on hover */
+    color: #343a40; /* Change text color on hover */
+    border-color: #343a40; /* Change border color on hover */
 }
